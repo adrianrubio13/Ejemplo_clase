@@ -1,8 +1,11 @@
 import numpy as np
 
-a = np.array([
-    [1, 2, 3],
-    [4, 5, 6]
-])
+def test_shape():
+    a = np.array([
+            [1,2,3],
+            [4,5,6]
 
-print(a)
+    ])
+
+    assert a.shape == (2, 3)
+    
